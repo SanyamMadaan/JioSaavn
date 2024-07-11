@@ -68,13 +68,13 @@ const Home = () => {
       <Navbar />
 
       <div className="tertiary_bg ml-2 px-4 py-4 home  text-black ">
-        <div className="flex justify-between mb-4 pt-4 items-center">
+        <div className="flex lg:justify-between mb-4 pt-4 items-center">
           <span className="text-xl font-bold hover:underline cursor-pointer">
             Focus
           </span>
 
         </div>
-        <div className="grid  gap-6 grid-cols-5">
+        <div className="grid  gap-6 grid-cols-2 lg:grid-cols-5">
           {songs.map((song, i) => {
             return <Card key={song.id} idx={i} song={song} />;
           })}

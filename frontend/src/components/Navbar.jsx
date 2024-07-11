@@ -48,7 +48,7 @@ const Navbar = () => {
   }, [location.pathname]);
   return (
     <header className="flex sticky top-0 z-50 justify-between ml-2 rounded-[6px]  mt-2 px-8 secondary_bg items-center ">
-      <div className="flex gap-2  items-center   w-1/2">
+      <div className="flex   items-center ml-3   w-1/3">
       <img className="mr-5"src="https://developer.android.com/static/images/distribute/stories/jiosaavn.png" width="200px" />
       
         <div
@@ -71,19 +71,19 @@ const Navbar = () => {
       </div>
 
       
-            <div>
+            <div className="flex justify-center">
         {!isAuthenticated ? (
           <div>
             <Link
               to={"/signup"}
-              className="  text-black rounded-full  mt-4 px-8 text-base  py-2 text-white- font-semibold"
+              className="  text-black rounded-full cursor-pointer  mt-4 px-8 text-base  py-2 text-white- font-semibold"
             >
               Sign Up
             </Link>
 
             <Link
               to={"/login"}
-              className="rounded-full text-black mt-4 px-8 text-base  py-3 bg-white font-semibold"
+              className="rounded-full text-black mt-4 px-6 text-base  py-3  font-semibold"
             >
               Log in
             </Link>
